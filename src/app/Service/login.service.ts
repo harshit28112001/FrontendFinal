@@ -9,7 +9,7 @@ export class LoginService {
   generateToken(credentials:any)
   {
     localStorage.setItem("name",credentials.username)
-    return this.http.post(`http://20.252.116.182:8083/auth/login`,credentials)
+    return this.http.post(`http://login-harshit.itcblogs.xyz:8083/auth/login`,credentials)
   }
   loginUser(token)
   {
